@@ -50,13 +50,18 @@
 <!-- Navbar -->
 <nav class="bg-black py-4 px-6 fixed top-0 w-full z-50 luxury-shadow">
   <div class="flex justify-between items-center">
+    <!-- Logo and Name -->
     <a href="index.html" class="flex items-center space-x-2">
       <img src="src/images/glmr-logo.png" alt="GLMR Logo" class="w-12 h-12 object-contain">
-      <h1 class="text-xl md:text-2xl font-bold text-gold whitespace-nowrap">Global Light Masters Resources</h1>
+      <h1 class="text-base sm:text-lg md:text-2xl font-bold text-gold whitespace-nowrap">Global Light Masters Resources</h1>
     </a>
-    <div class="md:hidden">
-      <button id="navToggle" class="text-gold text-3xl">☰</button>
-    </div>
+
+    <!-- Toggle Button for Mobile -->
+    <button id="navToggle" class="md:hidden text-gold text-3xl ml-4">
+      ☰
+    </button>
+
+    <!-- Desktop Nav Menu -->
     <div id="navMenu" class="hidden md:flex space-x-6 text-lg font-medium">
       <a href="index.html" class="text-gold">Home</a>
       <a href="about.html" class="hover:text-gold">About</a>
@@ -73,6 +78,7 @@
     <a href="gallery.html" class="block hover:text-gold">Gallery</a>
   </div>
 </nav>
+
 
 <!-- Hero Section -->
 <section class="relative h-screen flex items-center justify-center pt-24 pb-24 animate-fade-up">
