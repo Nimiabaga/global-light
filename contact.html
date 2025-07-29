@@ -53,21 +53,36 @@
 <body class="bg-gray-900 text-white font-serif">
 
  <!-- Navbar -->
-<nav class="bg-black py-4 px-6 flex justify-between items-center fixed top-0 w-full z-50 luxury-shadow">
-  <div class="flex items-center space-x-4">
+<nav class="bg-black py-4 px-6 fixed top-0 w-full z-[100] luxury-shadow">
+  <div class="flex justify-between items-center">
+    <!-- Logo and Brand Name -->
     <a href="index.html" class="flex items-center space-x-2">
-      <img src="src/images/glmr-logo.png" alt="GLMR Logo" class="w-16 h-16 object-contain">
-      <h1 class="text-2xl md:text-3xl font-bold text-gold whitespace-nowrap">Global Light Masters Resources</h1>
+      <img src="src/images/glmr-logo.png" alt="GLMR Logo" class="w-12 h-12 object-contain">
+      <h1 class="text-base sm:text-lg md:text-2xl font-bold text-gold whitespace-nowrap">Global Light Masters Resources</h1>
     </a>
+
+    <!-- Hamburger Menu Icon -->
+    <button id="navToggle" class="md:hidden text-gold text-3xl focus:outline-none">
+      ☰
+    </button>
+
+    <!-- Desktop Nav -->
+    <div id="navMenu" class="hidden md:flex space-x-6 text-lg font-medium">
+      <a href="index.html" class="text-gold">Home</a>
+      <a href="about.html" class="hover:text-gold">About</a>
+      <a href="contact.html" class="hover:text-gold">Contact</a>
+      <a href="gallery.html" class="hover:text-gold">Gallery</a>
+    </div>
   </div>
-  <div class="space-x-6 text-lg font-medium">
-    <a href="index.html" class="text-gold">Home</a>
-    <a href="about.html" class="hover:text-gold">About</a>
-    <a href="contact.html" class="hover:text-gold">Contact</a>
-    <a href="gallery.html" class="hover:text-gold">Gallery</a>
+
+  <!-- Mobile Nav -->
+  <div id="mobileMenu" class="md:hidden hidden mt-4 space-y-2">
+    <a href="index.html" class="block text-gold">Home</a>
+    <a href="about.html" class="block hover:text-gold">About</a>
+    <a href="contact.html" class="block hover:text-gold">Contact</a>
+    <a href="gallery.html" class="block hover:text-gold">Gallery</a>
   </div>
 </nav>
-
 
   <!-- Hero Section -->
   <section class="relative h-screen flex items-center justify-center pt-24 pb-24 animate-fade-up">
@@ -158,9 +173,6 @@
     </div>
   </footer>
 
-</body>
-</html>
-
 <!-- WhatsApp Floating Button -->
 <a
   href="https://wa.me/2349168033670"
@@ -169,7 +181,16 @@
   aria-label="Chat on WhatsApp"
 >
   <img src="src/images/icon-whatsapp.png" alt="WhatsApp" class="w-6 h-6" />
-  Chat with us
+  <span class="hidden sm:inline">Chat with us</span>
 </a>
 
+<!-- ✅ Mobile Menu Toggle Script -->
+<script>
+  document.getElementById('navToggle')?.addEventListener('click', function () {
+    const menu = document.getElementById('mobileMenu');
+    menu?.classList.toggle('hidden');
+  });
+</script>
 
+</body>
+</html>
