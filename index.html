@@ -48,20 +48,20 @@
 <body class="bg-gray-900 text-white font-serif">
 
 <!-- Navbar -->
-<nav class="bg-black py-4 px-6 fixed top-0 w-full z-[100] luxury-shadow">
+<nav class="bg-black py-4 px-6 fixed top-0 w-full z-50 luxury-shadow">
   <div class="flex justify-between items-center">
-    <!-- Logo and Brand Name -->
+    <!-- Logo and Name -->
     <a href="index.html" class="flex items-center space-x-2">
       <img src="src/images/glmr-logo.png" alt="GLMR Logo" class="w-12 h-12 object-contain">
       <h1 class="text-base sm:text-lg md:text-2xl font-bold text-gold whitespace-nowrap">Global Light Masters Resources</h1>
     </a>
 
-    <!-- Hamburger Menu Icon -->
-    <button id="navToggle" class="md:hidden text-gold text-3xl focus:outline-none">
+    <!-- Toggle Button for Mobile -->
+    <button id="navToggle" class="md:hidden text-gold text-3xl ml-4">
       ☰
     </button>
 
-    <!-- Desktop Nav -->
+    <!-- Desktop Nav Menu -->
     <div id="navMenu" class="hidden md:flex space-x-6 text-lg font-medium">
       <a href="index.html" class="text-gold">Home</a>
       <a href="about.html" class="hover:text-gold">About</a>
@@ -70,7 +70,7 @@
     </div>
   </div>
 
-  <!-- Mobile Nav -->
+  <!-- Mobile Menu -->
   <div id="mobileMenu" class="md:hidden hidden mt-4 space-y-2">
     <a href="index.html" class="block text-gold">Home</a>
     <a href="about.html" class="block hover:text-gold">About</a>
@@ -78,6 +78,7 @@
     <a href="gallery.html" class="block hover:text-gold">Gallery</a>
   </div>
 </nav>
+
 
 <!-- Hero Section -->
 <section class="relative h-screen flex items-center justify-center pt-24 pb-24 animate-fade-up">
