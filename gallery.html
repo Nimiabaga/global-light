@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery - Global Light Masters Resources</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: '#D4AF37',
+            lightGold: '#F4E4BC',
+            darkGold: '#B8941F',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .gradient-gold {
+      background: linear-gradient(135deg, #D4AF37, #F4E4BC, #D4AF37);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .luxury-shadow {
+      box-shadow: 0 20px 40px rgba(212, 175, 55, 0.1);
+    }
+    .hover-glow:hover {
+      box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
+      transform: translateY(-2px);
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-serif">
+
+  <!-- Navbar -->
+  <nav class="bg-black py-4 px-6 flex justify-between items-center fixed top-0 w-full z-50 luxury-shadow">
+    <div class="flex items-center space-x-4">
+      <a href="index.html" class="flex items-center space-x-2">
+        <img src="src/images/glmr-logo.png" alt="GLMR Logo" class="w-16 h-16 object-contain">
+        <h1 class="text-2xl md:text-3xl font-bold text-gold whitespace-nowrap">Global Light Masters Resources</h1>
+      </a>
+    </div>
+    <div class="space-x-6 text-lg font-medium">
+      <a href="index.html" class="text-gold">Home</a>
+      <a href="about.html" class="hover:text-gold">About</a>
+      <a href="contact.html" class="hover:text-gold">Contact</a>
+      <a href="gallery.html" class="hover:text-gold">Gallery</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section for Gallery -->
+  <section class="relative h-[50vh] flex items-center justify-center overflow-hidden mt-24">
+    <img src="src/images/contact-hero.jpg" alt="Gallery Background" class="absolute inset-0 w-full h-full object-cover opacity-10 z-0" />
+    <h2 class="text-5xl md:text-6xl font-bold gradient-gold drop-shadow-lg z-10 text-center">Gallery</h2>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="py-16 px-6 md:px-16 bg-gray-900 text-gray-200">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- 20 Images -->
+        <div class="bg-gray-800 rounded-lg overflow-hidden luxury-shadow hover-glow"><img src="src/images/picture1.jpg" alt="Gallery 1" class="w-full h-60 object-cover" /></div>
+        <div class="bg-gray-800 rounded-lg overflow-hidden luxury-shadow hover-glow"><img src="src/images/picture2.jpg" alt="Gallery 2" class="w-full h-60 object-cover" /></div>
+        <div class="bg-gray-800 rounded-lg overflow-hidden luxury-shadow hover-glow"><img src="src/images/picture3.jpg" alt="Gallery 3" class="w-full h-60 object-cover" /></div>
+        <div class="bg-gray-800 rounded-lg overflow-hidden luxury-shadow hover-glow"><img src="src/images/picture4.jpg" alt="Gallery 4" class="w-full h-60 object-cover" /></div>
+        <div class="bg-gray-800 rounded-lg overflow-hidden luxury-shadow hover-glow"><img src="src/images/picture5.jpg" alt="Gallery 5" class="w-full h-60 object-cover" /></div>
+        <div class="bg-gray-800 rounded-lg overflow-hidden luxury-shadow hover-glow"><img src="src/images/picture6.jpg" alt="Gallery 6" class="w-full h-60 object-cover" /></div>
+        <div class="bg-gray-800 rounded-lg overflow-hidden luxury-shadow hover-glow"><img src="src/images/picture7.jpg" alt="Gallery 7" class="w-full h-60 object-cover" /></div>
+        <div class="bg-gray-800 rounded-lg overflow-hidden luxury-shadow hover-glow"><img src="src/images/picture8.jpg" alt="Gallery 8" class="w-full h-60 object-cover" /></div>
+        <div class="bg-gray-800 rounded-lg overflow-hidden luxury-shadow hover-glow"><img src="src/images/picture9.jpg" alt="Gallery 9" class="w-full h-60 object-cover" /></div>
+        <div class="bg-gray-800 rounded-lg overflow-hidden luxury-shadow hover-glow"><img src="src/images/picture10.jpg" alt="Gallery 10" class="w-full h-60 object-cover" /></div>
+        <div class="bg-gray-800 rounded-lg overflow-hidden luxury-shadow hover-glow"><img src="src/images/picture11.jpg" alt="Gallery 11" class="w-full h-60 object-cover" /></div>
+        <div class="bg-gray-800 rounded-lg overflow-hidden luxury-shadow hover-glow"><img src="src/images/picture12.jpg" alt="Gallery 12" class="w-full h-60 object-cover" /></div>
+        <div class="bg-gray-800 rounded-lg overflow-hidden luxury-shadow hover-glow"><img src="src/images/picture13.jpg" alt="Gallery 13" class="w-full h-60 object-cover" /></div>
+        <div class="bg-gray-800 rounded-lg overflow-hidden luxury-shadow hover-glow"><img src="src/images/picture14.jpg" alt="Gallery 14" class="w-full h-60 object-cover" /></div>
+        <div class="bg-gray-800 rounded-lg overflow-hidden luxury-shadow hover-glow"><img src="src/images/picture15.jpg" alt="Gallery 15" class="w-full h-60 object-cover" /></div>
+        <div class="bg-gray-800 rounded-lg overflow-hidden luxury-shadow hover-glow"><img src="src/images/picture16.jpg" alt="Gallery 16" class="w-full h-60 object-cover" /></div>
+        <div class="bg-gray-800 rounded-lg overflow-hidden luxury-shadow hover-glow"><img src="src/images/picture17.jpg" alt="Gallery 17" class="w-full h-60 object-cover" /></div>
+        <div class="bg-gray-800 rounded-lg overflow-hidden luxury-shadow hover-glow"><img src="src/images/picture18.jpg" alt="Gallery 18" class="w-full h-60 object-cover" /></div>
+        <div class="bg-gray-800 rounded-lg overflow-hidden luxury-shadow hover-glow"><img src="src/images/picture19.jpg" alt="Gallery 19" class="w-full h-60 object-cover" /></div>
+        <div class="bg-gray-800 rounded-lg overflow-hidden luxury-shadow hover-glow"><img src="src/images/picture20.jpg" alt="Gallery 20" class="w-full h-60 object-cover" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white py-12">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 items-start">
+      <div class="space-y-4">
+        <img src="src/images/glmr-logo.png" alt="Global Light Masters Logo" class="w-40 md:w-48 mb-4">
+        <div class="flex space-x-4">
+          <a href="https://www.instagram.com/globallightmasters/" target="_blank"><img src="src/images/icon-instagram.png" alt="Instagram" class="w-6 h-6 hover:scale-110 transition"></a>
+          <a href="https://web.facebook.com/profile.php?id=61555218551473" target="_blank"><img src="src/images/icon-facebook.png" alt="Facebook" class="w-6 h-6 hover:scale-110 transition"></a>
+          <a href="#" target="_blank"><img src="src/images/icon-tiktok.png" alt="TikTok" class="w-6 h-6 hover:scale-110 transition"></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-gold font-semibold text-lg mb-4">Useful Links</h4>
+        <ul class="space-y-2 text-sm text-gray-300">
+          <li><a href="index.html" class="hover:text-gold">Home</a></li>
+          <li><a href="about.html" class="hover:text-gold">About Us</a></li>
+          <li><a href="gallery.html" class="hover:text-gold">Gallery</a></li>
+          <li><a href="contact.html" class="hover:text-gold">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-gold font-semibold text-lg mb-4">Contact</h4>
+        <ul class="text-sm text-gray-300 space-y-2">
+          <li>🕘 Mon – Fri: 8.00am – 6.00pm</li>
+          <li><a href="tel:+2349168033670" class="hover:text-gold">📞 09168033670</a></li>
+          <li>📧 <a href="mailto:info@globallightmasters.com" class="text-gold hover:underline">globallightmastersresources@gmail.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-gold font-semibold text-lg mb-4">Address</h4>
+        <p class="text-sm text-gray-300">
+          48 Idoluwo Street (First Floor)<br>
+          port.
+        </p>
+      </div>
+    </div>
+    <div class="text-center text-sm text-gold mt-10">
+      © 2025 Global Light Masters Resources. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
+
+<!-- WhatsApp Floating Button -->
+<a
+  href="https://wa.me/2349168033670"
+  class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-full shadow-lg flex items-center gap-2 transition"
+  target="_blank"
+  aria-label="Chat on WhatsApp"
+>
+  <img src="src/images/icon-whatsapp.png" alt="WhatsApp" class="w-6 h-6" />
+  Chat with us
+</a>

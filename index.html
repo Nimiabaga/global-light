@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Global Light Masters Resources - Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: '#D4AF37',
+            lightGold: '#F4E4BC',
+            darkGold: '#B8941F',
+          },
+          animation: {
+            'fade-up': 'fadeUp 1s ease-out forwards',
+          },
+          keyframes: {
+            fadeUp: {
+              '0%': { opacity: 0, transform: 'translateY(20px)' },
+              '100%': { opacity: 1, transform: 'translateY(0)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .gradient-gold {
+      background: linear-gradient(135deg, #D4AF37, #F4E4BC, #D4AF37);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .luxury-shadow {
+      box-shadow: 0 20px 40px rgba(212, 175, 55, 0.1);
+    }
+    .hover-glow:hover {
+      box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
+      transform: translateY(-2px);
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-900 text-white font-serif">
+
+<!-- Navbar -->
+<nav class="bg-black py-4 px-6 flex justify-between items-center fixed top-0 w-full z-50 luxury-shadow">
+  <div class="flex items-center space-x-4">
+    <a href="index.html" class="flex items-center space-x-2">
+      <img src="src/images/glmr-logo.png" alt="GLMR Logo" class="w-16 h-16 object-contain">
+      <h1 class="text-2xl md:text-3xl font-bold text-gold whitespace-nowrap">Global Light Masters Resources</h1>
+    </a>
+  </div>
+  <div class="space-x-6 text-lg font-medium">
+    <a href="index.html" class="text-gold">Home</a>
+    <a href="about.html" class="hover:text-gold">About</a>
+    <a href="contact.html" class="hover:text-gold">Contact</a>
+    <a href="gallery.html" class="hover:text-gold">Gallery</a>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center pt-24 animate-fade-up">
+  <img src="src/images/hero.jpg" alt="Luxury Lighting" class="absolute inset-0 object-cover w-full h-full opacity-40" />
+  <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/80"></div>
+
+  <div class="relative z-10 text-center px-4 max-w-4xl mx-auto bg-black/50 backdrop-blur-sm rounded-xl p-8 shadow-2xl">
+    <h2 class="text-5xl md:text-6xl font-bold text-[#D4AF37] leading-tight mb-6 drop-shadow-lg">
+      Lighting Up Your World <br> With Brilliance
+    </h2>
+    <p class="text-lg text-gray-200 mb-8 max-w-xl mx-auto leading-relaxed">
+      Discover premium lighting solutions that transform spaces into extraordinary experiences.
+    </p>
+    <div class="flex justify-center gap-6 flex-wrap">
+      <a href="https://wa.me/2349168033670" target="_blank" class="bg-gold text-black px-6 py-3 rounded-md font-semibold hover-glow transition">
+        Get a Quote
+      </a>
+      <a href="contact.html" class="border border-gold text-gold px-6 py-3 rounded-md font-semibold hover:bg-gold hover:text-black transition">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- Short Intro Section -->
+<section class="py-24 px-6 bg-gradient-to-b from-gray-900 to-black text-center animate-fade-up">
+  <h3 class="text-4xl md:text-5xl font-bold gradient-gold mb-8">Premium Lighting for Elegant Spaces</h3>
+  <p class="text-lg text-gray-300 max-w-3xl mx-auto mb-16">
+    Whether you're upgrading your home or furnishing a luxury space, Global Light Master Resources delivers timeless brilliance and design-forward lighting solutions tailored for you.
+  </p>
+
+  <!-- Lighting Feature Cards -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+    <div class="bg-gray-800 border border-gold p-6 rounded-xl shadow-lg hover-glow">
+      <img src="src/images/icon-chandelier.png" alt="Chandelier Icon" class="w-16 h-16 mx-auto mb-4">
+      <h4 class="text-xl font-semibold text-gold mb-2">Chandeliers</h4>
+      <p class="text-gray-400 text-sm">Timeless elegance hanging in every room. Explore our luxurious chandelier range.</p>
+    </div>
+    <div class="bg-gray-800 border border-gold p-6 rounded-xl shadow-lg hover-glow">
+      <img src="src/images/icon-pendant.png" alt="Pendant Light Icon" class="w-16 h-16 mx-auto mb-4">
+      <h4 class="text-xl font-semibold text-gold mb-2">Pendant Lights</h4>
+      <p class="text-gray-400 text-sm">Stylish and minimal, perfect for dining and kitchen areas. Make your space shine.</p>
+    </div>
+    <div class="bg-gray-800 border border-gold p-6 rounded-xl shadow-lg hover-glow">
+      <img src="src/images/icon-led.png" alt="LED Icon" class="w-16 h-16 mx-auto mb-4">
+      <h4 class="text-xl font-semibold text-gold mb-2">LED Lighting</h4>
+      <p class="text-gray-400 text-sm">Energy-efficient brilliance to illuminate your lifestyle and save on power bills.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Explore Categories Section -->
+<section class="py-20 px-6 bg-gray-900 text-center animate-fade-up">
+  <h3 class="text-3xl md:text-4xl font-bold gradient-gold mb-12">Explore Our Lighting Categories</h3>
+  <div class="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto">
+    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-md hover-glow transition">
+      <img src="src/images/ceiling-lights.png" alt="Ceiling Lights" class="w-full h-64 object-cover">
+      <div class="p-6">
+        <h4 class="text-xl font-bold text-gold mb-2">Ceiling Lights</h4>
+        <p class="text-gray-300 text-sm">For all budgets and styles. Brighten up your space beautifully.</p>
+      </div>
+    </div>
+    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-md hover-glow transition">
+      <img src="src/images/wall-lights.png" alt="Wall Lights" class="w-full h-64 object-cover">
+      <div class="p-6">
+        <h4 class="text-xl font-bold text-gold mb-2">Wall Lights</h4>
+        <p class="text-gray-300 text-sm">Elegant wall sconces to elevate your ambiance with style.</p>
+      </div>
+    </div>
+    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-md hover-glow transition">
+      <img src="src/images/outdoor-lights.png" alt="Outdoor Lights" class="w-full h-64 object-cover">
+      <div class="p-6">
+        <h4 class="text-xl font-bold text-gold mb-2">Outdoor Lights</h4>
+        <p class="text-gray-300 text-sm">Secure and brighten your home’s exterior with class.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- What Makes Us Stand Out -->
+<section class="bg-gradient-to-b from-black to-gray-900 text-white py-20 px-6 animate-fade-up">
+  <h3 class="text-4xl md:text-5xl font-bold text-center gradient-gold mb-16">What Makes Us Stand Out</h3>
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+    <div class="flex items-start gap-4">
+      <img src="src/images/icon-standout-lamp.png" alt="Quality" class="w-10 h-10 mt-1">
+      <div>
+        <h4 class="text-xl font-semibold text-gold mb-1">Quality</h4>
+        <p class="text-gray-300 text-sm">We deliver impeccable standards with every product. Customer satisfaction is our driving force.</p>
+      </div>
+    </div>
+    <div class="flex items-start gap-4">
+      <img src="src/images/icon-standout-lamp.png" alt="Passion" class="w-10 h-10 mt-1">
+      <div>
+        <h4 class="text-xl font-semibold text-gold mb-1">Passionate about Lighting</h4>
+        <p class="text-gray-300 text-sm">We are driven by trends and passion. Our mission is to light up lives with the latest innovations.</p>
+      </div>
+    </div>
+    <div class="flex items-start gap-4">
+      <img src="src/images/icon-standout-lamp.png" alt="Innovation" class="w-10 h-10 mt-1">
+      <div>
+        <h4 class="text-xl font-semibold text-gold mb-1">Innovation</h4>
+        <p class="text-gray-300 text-sm">We never stop evolving. We always seek the next big solution for lighting excellence.</p>
+      </div>
+    </div>
+    <div class="flex items-start gap-4">
+      <img src="src/images/icon-standout-lamp.png" alt="Proud" class="w-10 h-10 mt-1">
+      <div>
+        <h4 class="text-xl font-semibold text-gold mb-1">From Here, Proudly</h4>
+        <p class="text-gray-300 text-sm">Rooted in Nigeria, inspired by the world. We are proud to light homes and hearts across the country.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+  <footer class="bg-black text-white py-12">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 items-start">
+      <div class="space-y-4">
+        <img src="src/images/glmr-logo.png" alt="Global Light Masters Logo" class="w-40 md:w-48 mb-4">
+        <div class="flex space-x-4">
+          <a href="https://www.instagram.com/globallightmasters/" target="_blank"><img src="src/images/icon-instagram.png" alt="Instagram" class="w-6 h-6 hover:scale-110 transition"></a>
+          <a href="https://web.facebook.com/profile.php?id=61555218551473" target="_blank"><img src="src/images/icon-facebook.png" alt="Facebook" class="w-6 h-6 hover:scale-110 transition"></a>
+          <a href="#" target="_blank"><img src="src/images/icon-tiktok.png" alt="TikTok" class="w-6 h-6 hover:scale-110 transition"></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-gold font-semibold text-lg mb-4">Useful Links</h4>
+        <ul class="space-y-2 text-sm text-gray-300">
+          <li><a href="index.html" class="hover:text-gold">Home</a></li>
+          <li><a href="about.html" class="hover:text-gold">About Us</a></li>
+          <li><a href="gallery.html" class="hover:text-gold">Gallery</a></li>
+          <li><a href="contact.html" class="hover:text-gold">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-gold font-semibold text-lg mb-4">Contact</h4>
+        <ul class="text-sm text-gray-300 space-y-2">
+          <li>🕘 Mon – Fri: 8.00am – 6.00pm</li>
+          <li><a href="tel:+2349168033670" class="hover:text-gold">📞 09168033670</a></li>
+          <li>📧 <a href="mailto:info@globallightmasters.com" class="text-gold hover:underline">globallightmastersresources@gmail.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-gold font-semibold text-lg mb-4">Address</h4>
+        <p class="text-sm text-gray-300">
+          48 Idoluwo Street (First Floor)<br>
+          port.
+        </p>
+      </div>
+    </div>
+    <div class="text-center text-sm text-gold mt-10">
+      © 2025 Global Light Masters Resources. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
+
+<!-- WhatsApp Floating Button -->
+<a
+  href="https://wa.me/2349168033670"
+  class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-full shadow-lg flex items-center gap-2 transition"
+  target="_blank"
+  aria-label="Chat on WhatsApp"
+>
+  <img src="src/images/icon-whatsapp.png" alt="WhatsApp" class="w-6 h-6" />
+  Chat with us
+</a>
